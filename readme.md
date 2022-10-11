@@ -1,6 +1,6 @@
 # Calcolo dorso
 
 ## Demo
-[Su github page](https://archistico.github.io/CalcoloDorso/)
+[Su github page](https://archistico.github.io/CalcoloDorsoLibro/)
 
-![screenshot](https://github.com/archistico/CalcoloDorso/blob/main/screenshot.png?raw=true) 
+![screenshot](https://github.com/archistico/CalcoloDorsoLibro/blob/main/screenshot.png?raw=true) 
