@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calcolo dorso</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1> </h1>
+    <h3></h3>
+    <header>
+        <div class="titolo">
+            <h1 class="titolo-leggero">Calcolo <span class="titolo-nero">dorso</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Dorso copertina libro</h2>
+            <p class="spiegazione">Il dorso viene calcolato in base al numero di pagine, al tipo di carta e alla rilegatura.</p>
+            <label for="html_pagine">Numero di pagine</label>
+            <input name="html_pagine" id="html_pagine" onchange="onChangeValue()" type="number" min="2" max="2000" value="80">
+            
+            <label for="html_carta">Scegli il tipo di carta</label>
+            <select name="html_carta" id="html_carta" onchange="onChangeValue()">
+                <option value="uso-mano-avorio-80g">Uso Mano (Avorio - 80g)</option>
+                <option value="uso-mano-avorio-100g">Uso Mano (Avorio - 100g)</option>
+                <option value="uso-mano-avorio-120g">Uso Mano (Avorio - 120g)</option>
+                <option value="uso-mano-bianca-80g">Uso Mano (Bianca - 80g)</option>
+                <option value="uso-mano-bianca-90g">Uso Mano (Bianca - 90g)</option>
+                <option value="uso-mano-bianca-100g" selected>Uso Mano (Bianca - 100g)</option>
+                <option value="uso-mano-bianca-120g">Uso Mano (Bianca - 120g)</option>
+                <option value="freelife-bianca-100g">FreeLife (Bianca - 100g)</option>
+                <option value="lux-cream-avorio-80g">Lux Cream (Avorio - 80g)</option>
+                <option value="uso-mano-spessorata-avorio-100g">Uso Mano Spessorata (Avorio - 100g)</option>
+                <option value="tintoretto-avorio-95g">Tintoretto (Avorio - 95g)</option>
+                <option value="tintoretto-bianca-95g">Tintoretto (Bianca - 95g)</option>
+            </select>
+
+            <label for="html_rilegatura">Seleziona la rilegatura</label>
+            <select name="html_rilegatura" id="html_rilegatura" onchange="onChangeValue()">
+                <option value="fresata" selected>Fresata</option>
+                <option value="cucita">Cucita</option>                
+            </select>
+
+            <div class="risultati">
+                <div class="risultati-unita">
+                    <div>
+                        <p><span class="text-small">Dimensione</span></p>
+                        <p>Dorso</p>
+                    </div>
+                </div>
+                <div class="risultati-dorso">
+                    <div>
+                        <p><span id="html_dorso" class="grassetto"></span> mm</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p class="contatti">info🐌supercat.dev</p>
+            <p class="copyright">2022 © Emilie Rollandin</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
