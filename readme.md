@@ -1,6 +1,7 @@
 # Calcolo dorso
 
 ## Demo
-[Su github page](https://archistico.github.io/CalcolaDorsoLibro/)
+[Link su github page](https://archistico.github.io/CalcolaDorsoLibro/)
 
+## Screenshot
 ![screenshot](https://github.com/archistico/CalcolaDorsoLibro/blob/main/screenshot.png?raw=true) 
